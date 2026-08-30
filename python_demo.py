@@ -40,8 +40,17 @@
 # print(f,type(f),id(f))
 
 a=[10,30,40,50]
-b=a
-c=[10,30,40,50]
-print(a is b,b!=c)          # is and is not discribe location of value .like true or false
-print(c is not b,a is c)
-print(b==a)
+# b=a
+# c=[10,30,40,50]
+# print(a is b,b!=c)          # is and is not discribe location of value .like true or false
+# print(c is not b,a is c)
+# print(b==a)
+
+
+
+
+
+
+
+
+
