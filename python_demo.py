@@ -46,13 +46,15 @@
 # print(c is not b,a is c)
 # print(b==a)
 
-b=5
-while b>0:
-    print(b)
-    b-=1
-print("Blast off!")
+# b=5
+# while b>0:
+#     print(b)
+#     b-=1
+# print("Blast off!")
 # row=int(input("enter a row number"))
 # cloumn=int(input("enter a cloumn number"))
+
+help()
 
 
 
