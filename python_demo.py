@@ -54,7 +54,33 @@
 # row=int(input("enter a row number"))
 # cloumn=int(input("enter a cloumn number"))
 
-help()
+
+
+#constuctor and destructors
+class student:
+    def __init__(self,name,age,city):
+        print("constructor calling")
+        print("student data")
+        self.name=name
+        self.age=age
+        self.city=city
+
+    def __del__(self):
+        print("destructors calling")
+
+student_baby=student("baby",20,"chennai")
+print(student_baby.name)
+print(student_baby.age)
+print(student_baby.city)
+del student_baby
+print("----------------")
+student_karthi=student("karthi",26,"erode")     
+print(f"{student_karthi.name}\n{student_karthi.age}\n{student_karthi.city}")
+print("----------------")
+student_priya=student("priya",23,"delhi") 
+print(f"{student_priya.name}\n{student_priya.age}\n{student_priya.city}")
+print("----------------")
+
 
 
 
