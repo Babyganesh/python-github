@@ -1,0 +1,17 @@
+import re
+
+def information(text):
+    emails = re.findall(r'[\w\.-]+@[\w\.-]+\.\w+', text)
+    phones = re.findall(r'\d{10}', text)
+    urls = re.findall(r'\shttps?:\W+\w+\W\w+.\w+', text)
+
+    return emails, phones, urls
+
+with open("C:\\Users\\Admin\\Desktop\\filehandling\\contacts.txt", "r") as file:
+    data = file.read()
+
+emails, phones, urls = information(data)
+
+print("Emails:", emails)
+print("Phone Numbers:", phones)
+print("URLs:", urls)
